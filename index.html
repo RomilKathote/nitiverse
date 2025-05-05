@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lead Generation Services | Nitiverse</title>
+  <meta name="description" content="Nitiverse provides top-tier B2B lead generation services to drive business growth. Outsource your lead generation to our expert team today!">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='url(%23grad)'/%3E%3Ctext x='50' y='60' font-family='Arial, sans-serif' font-size='20' fill='%23FBBF24' text-anchor='middle' font-weight='bold'%3EN%3C/text%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%231E3A8A;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%233B82F6;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E">
+  <style>
+  /* Custom slide-down animation */
+    .slide-down {
+      animation: slideDown 0.3s ease-out forwards;
+    }
+    .slide-up {
+      animation: slideUp 0.3s ease-out forwards;
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10%);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-10%);
+      }
+    }
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* Stats counter animation */
+    .counter {
+      animation: countUp 2s ease-in-out forwards;
+    }
+    @keyframes countUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    /* FAQ accordion */
+    .faq-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-toggle:checked ~ .faq-content {
+      max-height: 200px;
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50">
+  <!-- Header -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center relative">
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+      <svg class="w-10 h-10 mr-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="url(#grad)" />
+        <text x="50" y="60" font-family="Arial, sans-serif" font-size="20" fill="#FBBF24" text-anchor="middle" font-weight="bold">N</text>
+        <defs>
+          <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1E3A8A;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <div class="text-2xl font-bold">Nitiverse</div>
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <div class="md:hidden relative">
+      <button id="menu-toggle" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Dropdown menu (Mobile only) -->
+      <div id="mobile-dropdown" class="hidden absolute right-0 mt-2 bg-white text-black rounded shadow-lg w-40 z-50">
+        <a href="#home" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+        <a href="#services" class="block px-4 py-2 hover:bg-gray-100">Services</a>
+        <a href="#benefits" class="block px-4 py-2 hover:bg-gray-100">Benefits</a>
+        <a href="#testimonials" class="block px-4 py-2 hover:bg-gray-100">Testimonials</a>
+        <a href="#faq" class="block px-4 py-2 hover:bg-gray-100">FAQ</a>
+        <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a>
+      </div>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-yellow-400 transition-colors">Home</a>
+      <a href="#services" class="hover:text-yellow-400 transition-colors">Services</a>
+      <a href="#benefits" class="hover:text-yellow-400 transition-colors">Benefits</a>
+      <a href="#testimonials" class="hover:text-yellow-400 transition-colors">Testimonials</a>
+      <a href="#faq" class="hover:text-yellow-400 transition-colors">FAQ</a>
+      <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- Hero Section -->
+<section id="home" class="relative h-screen overflow-hidden">
+  <!-- Background slides wrapper -->
+  <div id="hero-backgrounds" class="absolute inset-0 w-full h-full overflow-hidden">
+    <div id="bg1" class="absolute inset-0 bg-cover bg-center transition-all duration-1000 z-0"
+         style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+    </div>
+    <div id="bg2" class="absolute inset-0 bg-cover bg-center transition-all duration-1000 opacity-0 z-0"></div>
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-70 z-10"></div>
+  </div>
+
+  <!-- Content -->
+  <div class="container mx-auto px-4 h-full flex items-center justify-center text-center text-white relative z-20">
+    <div>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+        Supercharge Your Business with Nitiverse Lead Generation
+      </h1>
+      <p class="text-lg md:text-2xl mb-8 max-w-2xl mx-auto">
+        Unlock high-quality B2B leads with our expert team. Drive growth, boost conversions, and scale effortlessly.
+      </p>
+      <a href="#contact" class="bg-yellow-500 text-blue-900 font-semibold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-transform transform hover:scale-105">
+        Get Started Now
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-blue-900">Our Lead Generation Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-2xl font-semibold mb-4 text-blue-700">E-mail Marketing</h3>
+          <p class="text-gray-600"> We craft personalized, targeted email campaigns that captivate customers, promote your products, and drive measurable results.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-2xl font-semibold mb-4 text-blue-700">LinkedIn Marketing</h3>
+          <p class="text-gray-600">Our expert LinkedIn marketing services deliver targeted campaigns, engaging content, and strategic outreach to connect with professionals, build your brand, and drive leads.</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-2xl font-semibold mb-4 text-blue-700">Cold Calling Services</h3>
+          <p class="text-gray-600">Our skilled agents deliver professional outreach to generate qualified leads and set appointments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="bg-blue-900 text-white py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Impact in Numbers</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div class="counter">
+          <p class="text-5xl font-bold text-yellow-500 mb-2">1K+</p>
+          <p>Leads Generated</p>
+        </div>
+        <div class="counter">
+          <p class="text-5xl font-bold text-yellow-500 mb-2">5+</p>
+          <p>Happy Clients</p>
+        </div>
+        <div class="counter">
+          <p class="text-5xl font-bold text-yellow-500 mb-2">98%</p>
+          <p>Client Satisfaction</p>
+        </div>
+        <div class="counter">
+          <p class="text-5xl font-bold text-yellow-500 mb-2">24/7</p>
+          <p>Support Availability</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-blue-900">Why Choose Nitiverse?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="flex items-start">
+          <div class="text-yellow-500 mr-4">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3 text-blue-700">Experienced Team</h3>
+            <p class="text-gray-600">Our professionals bring years of expertise to deliver high-impact lead generation campaigns.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="text-yellow-500 mr-4">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3 text-blue-700">Customized Solutions</h3>
+            <p class="text-gray-600">We tailor strategies to your unique goals, ensuring maximum ROI and efficiency.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="text-yellow-500 mr-4">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3 text-blue-700">Cost-Effective</h3>
+            <p class="text-gray-600">Save on operational costs while accessing premium lead generation services.</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <div class="text-yellow-500 mr-4">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 2a8 8 0 100 16 8 8 0 000-16zm1 11H9v-2h2v2zm0-4H9V5h2v4z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3 text-blue-700">Scalable Services</h3>
+            <p class="text-gray-600">From startups to enterprises, our solutions grow with your business needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-blue-900">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <p class="text-gray-600 mb-4">"Nitiverse transformed our sales pipeline with high-quality leads. Their team is professional and results-driven!"</p>
+          <p class="font-semibold text-blue-700">Jayesh Patel, Patel Associates</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <p class="text-gray-600 mb-4">"The tailored LinkedIn marketing strategy transformed our online presence, showcasing our architectural expertise through engaging content and targeted campaigns"</p>
+          <p class="font-semibold text-blue-700">Parimal Manekar, Managing Director</p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-lg">
+          <p class="text-gray-600 mb-4">"Nitiverse elevated my video editing brand on LinkedIn, Help me to go worldwide."</p>
+          <p class="font-semibold text-blue-700">Tejas Telgote, Video Editor</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-16 text-blue-900">Frequently Asked Questions</h2>
+      <div class="space-y-6 max-w-3xl mx-auto">
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <input type="checkbox" id="faq1" class="faq-toggle hidden">
+          <label for="faq1" class="flex justify-between items-center cursor-pointer font-semibold text-blue-700">What is lead generation? <span class="text-yellow-500">+</span></label>
+          <div class="faq-content mt-4 text-gray-600">
+            <p>Lead generation is the process of identifying and attracting potential customers for your business, converting them into leads through targeted campaigns.</p>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <input type="checkbox" id="faq2" class="faq-toggle hidden">
+          <label for="faq2" class="flex justify-between items-center cursor-pointer font-semibold text-blue-700">How does Nitiverse ensure lead quality? <span class="text-yellow-500">+</span></label>
+          <div class="faq-content mt-4 text-gray-600">
+            <p>We use advanced targeting, data analytics, and professional outreach to ensure leads are relevant and high-quality for your business.</p>
+          </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg">
+          <input type="checkbox" id="faq3" class="faq-toggle hidden">
+          <label for="faq3" class="flex justify-between items-center cursor-pointer font-semibold text-blue-700">Can you handle international campaigns? <span class="text-yellow-500">+</span></label>
+          <div class="faq-content mt-4 text-gray-600">
+            <p>Yes, our global expertise allows us to run effective lead generation campaigns across multiple regions and industries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-900 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold mb-12">Ready to Skyrocket Your Leads?</h2>
+      <p class="text-lg mb-12 max-w-2xl mx-auto">Contact Nitiverse today to explore how our lead generation services can drive your business forward.</p>
+      <div class="flex justify-center">
+        <div class="bg-white text-blue-900 p-8 rounded-xl shadow-lg w-full max-w-md">
+  <form id="contactForm" action="https://formspree.io/f/your-form-id" method="POST" novalidate>
+    
+    <!-- Name Field -->
+    <div class="mb-6">
+      <input type="text" name="name" placeholder="Your Name"
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+      <p class="text-red-600 text-sm mt-1 hidden">Name is required.</p>
+    </div>
+
+    <!-- Email Field -->
+    <div class="mb-6">
+      <input type="email" name="email" placeholder="Your Email"
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500" required>
+      <p class="text-red-600 text-sm mt-1 hidden">A valid email is required.</p>
+    </div>
+
+    <!-- Message Field -->
+    <div class="mb-6">
+      <textarea name="message" placeholder="Your Message"
+        class="w-full p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+        required></textarea>
+      <p class="text-red-600 text-sm mt-1 hidden">Message is required.</p>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit"
+      class="bg-yellow-500 text-blue-900 font-semibold py-3 px-6 rounded-lg hover:bg-yellow-400 w-full transition-transform transform hover:scale-105">
+      Send Message
+    </button>
+
+  </form>
+</div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="site-footer">
+  <div class="footer-container">
+    <!-- Footer Columns -->
+    <div class="footer-columns">
+      <!-- Column 1: About -->
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>We provide innovative Marketing solutions to help businesses grow and succeed in the digital world.</p>
+        <div class="social-links">
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="www.linkedin.com/in/ram-joshi-a11761361" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://instagram.com/" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> Srinath Sankul,Near Railway Station, Akola</li>
+          <li><i class="fas fa-phone-alt"></i> +91 70305 06438</li>
+          <li><i class="fas fa-envelope"></i> hr@nitiverse.co.in</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    
+  <div class="container mx-auto px-4 text-center">
+      <div class="flex items-center justify-center mb-6">
+        <svg class="w-8 h-8 mr-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="40" fill="url(#grad)"/>
+          <text x="50" y="60" font-family="Arial, sans-serif" font-size="20" fill="#FBBF24" text-anchor="middle" font-weight="bold">N</text>
+          <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#1E3A8A;stop-opacity:1"/>
+              <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="text-xl font-bold">Nitiverse</div>
+      </div>
+      <p class="mb-6">© 2025 Nitiverse. All rights reserved.</p>
+      <div class="space-x-6">
+        <a href="#" class="hover:text-yellow-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-yellow-400 transition-colors">Terms of Service</a>
+        <a href="#contact" class="hover:text-yellow-400 transition-colors">Contact Us</a>
+      </div>
+    </div>
+	
+	
+</footer>
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- JavaScript for Current Year -->
+<script>
+const images = [
+    "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1508780709619-79562169bc64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+  ];
+
+  let current = 0;
+  const bg1 = document.getElementById('bg1');
+  const bg2 = document.getElementById('bg2');
+  let isBg1Visible = true;
+
+  setInterval(() => {
+    current = (current + 1) % images.length;
+    const nextImage = images[current];
+
+    if (isBg1Visible) {
+      bg2.style.backgroundImage = `url('${nextImage}')`;
+      bg2.classList.remove('opacity-0');
+      bg1.classList.add('opacity-0');
+    } else {
+      bg1.style.backgroundImage = `url('${nextImage}')`;
+      bg1.classList.remove('opacity-0');
+      bg2.classList.add('opacity-0');
+    }
+
+    isBg1Visible = !isBg1Visible;
+  }, 5000); // Change image every 5 seconds
+
+  const toggleBtn = document.getElementById('menu-toggle');
+  const dropdown = document.getElementById('mobile-dropdown');
+
+  toggleBtn.addEventListener('click', () => {
+    dropdown.classList.toggle('hidden');
+  });
+
+  // Optional: hide dropdown after click
+  const links = dropdown.querySelectorAll('a');
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      dropdown.classList.add('hidden');
+    });
+  });
+  
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById("contactForm");
+    const fields = form.querySelectorAll("input, textarea");
+
+    // Function to validate a single field
+    const validateField = (field) => {
+      const value = field.value.trim();
+      const errorText = field.parentElement.querySelector("p");
+      let isValid = true;
+
+      if (field.name === "email") {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        isValid = emailRegex.test(value);
+      } else {
+        isValid = value !== "";
+      }
+
+      if (!isValid) {
+        field.classList.add("border-red-500");
+        errorText.classList.remove("hidden");
+      } else {
+        field.classList.remove("border-red-500");
+        errorText.classList.add("hidden");
+      }
+
+      return isValid;
+    };
+
+    // Validate on blur
+    fields.forEach(field => {
+      field.addEventListener("blur", () => validateField(field));
+    });
+
+    // Validate on submit
+    form.addEventListener("submit", (e) => {
+      let formIsValid = true;
+
+      fields.forEach(field => {
+        const isValid = validateField(field);
+        if (!isValid) formIsValid = false;
+      });
+
+      if (!formIsValid) {
+        e.preventDefault(); // Stop form submission
+      }
+    });
+  });
+</script>
+
+<!-- CSS Styling -->
+<style>
+  .site-footer {
+    background: #909DD5;
+    color: #black;
+    padding: 40px 0 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 84px;
+  }
+
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+  }
+
+  .footer-column h3 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .footer-column h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+  }
+
+  .footer-column p {
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+
+  .footer-column ul li a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .footer-column ul li a:hover {
+    color: #3498db;
+  }
+
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-links a {
+    color: black;
+    background: rgba(255, 255, 255, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+
+  .social-links a:hover {
+    background: #3498db;
+    transform: translateY(-3px);
+  }
+
+  .footer-bottom {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    color: #bdc3c7;
+    font-size: 14px;
+  }
+
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+    }
+  }
+
+        /* Round Chat Button */
+        #chat-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #FA71CF;
+            color: black;
+            border-radius: 50%;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            cursor: pointer;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        #chat-button:hover {
+            background: #3a2368;
+            transform: scale(1.1);
+        }
+        
+        #chat-button svg {
+            width: 30px;
+            height: 30px;
+        }
+        
+        /* Chat Container */
+        #chat-container {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 350px;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            transform: scale(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+            opacity: 0;
+        }
+        
+        #chat-container.visible {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        #chat-header {
+            background: #4a2c82;
+            color: white;
+            padding: 10px 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+        }
+        
+        #chat-input-area {
+            padding: 10px;
+            border-top: 1px solid #eee;
+            display: flex;
+        }
+        
+        #chat-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+        
+        #send-btn {
+            padding: 8px 15px;
+            background: #4a2c82;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        #send-btn:hover {
+            background: #3a2368;
+        }
+        
+        #close-btn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        
+        .user-message {
+            background: #4a2c82;
+            color: white;
+            margin-left: auto;
+            border-bottom-right-radius: 5px;
+        }
+        
+        .bot-message {
+            background: #f1f1f1;
+            margin-right: auto;
+            border-bottom-left-radius: 5px;
+        }
+    </style>
+  <!-- Footer -->
+  
+
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  <!-- Round Chat Button -->
+    <button id="chat-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+    </button>
+
+    <!-- Chat Container -->
+    <div id="chat-container">
+        <div id="chat-header">
+            <span>Nitiverse Chat</span>
+            <button id="close-btn">×</button>
+        </div>
+        <div id="chat-messages">
+            <div class="message bot-message">Hello! Welcome to Nitiverse. How can I help you today?</div>
+        </div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script>
+        const chatButton = document.getElementById('chat-button');
+        const chatContainer = document.getElementById('chat-container');
+        const closeBtn = document.getElementById('close-btn');
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+        const chatMessages = document.getElementById('chat-messages');
+        
+        // Toggle chat window
+        chatButton.addEventListener('click', function() {
+            chatContainer.classList.toggle('visible');
+        });
+        
+        closeBtn.addEventListener('click', function() {
+            chatContainer.classList.remove('visible');
+        });
+        
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                const userMessage = document.createElement('div');
+                userMessage.classList.add('message', 'user-message');
+                userMessage.textContent = message;
+                chatMessages.appendChild(userMessage);
+                
+                // Clear input
+                chatInput.value = '';
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+                
+                // Simulate bot response (replace with actual API call)
+                setTimeout(() => {
+                    const botMessage = document.createElement('div');
+                    botMessage.classList.add('message', 'bot-message');
+                    botMessage.textContent = getBotResponse(message);
+                    chatMessages.appendChild(botMessage);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 500);
+            }
+        }
+        
+        // Send message on button click
+        sendBtn.addEventListener('click', sendMessage);
+        
+        // Send message on Enter key
+        chatInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+        
+        // Simple bot response logic (replace with your actual backend integration)
+        function getBotResponse(message) {
+            const lowerMsg = message.toLowerCase();
+            
+            if (lowerMsg.includes('hello') || lowerMsg.includes('hi')) {
+                return "Hello there! How can I assist you with Nitiverse today?";
+            } else if (lowerMsg.includes('help')) {
+                return "I can help answer questions about Nitiverse. What would you like to know?";
+            } else if (lowerMsg.includes('feature') || lowerMsg.includes('function')) {
+                return "Nitiverse offers amazing features! Check our website for more details.";
+            } else {
+                return "Thanks for your message! Our team will get back to you if needed.";
+            }
+        }
+    </script>
+	<!-- Cookie Banner -->
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #222; color: #fff; padding: 15px; display: flex; justify-content: space-between; align-items: center; z-index: 1000;">
+  <span>This website uses cookies to enhance your digital experience.
+</span>
+  <div>
+    <button onclick="acceptCookies()" style="margin-right: 10px;">Accept</button>
+    <button onclick="rejectCookies()">Reject</button>
+  </div>
+</div>
+
+<script>
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/";
+  }
+
+  function getCookie(name) {
+    let cname = name + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') c = c.substring(1);
+      if (c.indexOf(cname) == 0) return c.substring(cname.length, c.length);
+    }
+    return "";
+  }
+
+  function acceptCookies() {
+    setCookie("cookie_consent", "accepted", 365);
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+
+  function rejectCookies() {
+    setCookie("cookie_consent", "rejected", 365);
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+
+  // Show banner only if no cookie set
+  window.onload = function() {
+    if (!getCookie("cookie_consent")) {
+      document.getElementById("cookie-banner").style.display = "flex";
+    }
+  }
+</script>
+
+</body>
+</html>
